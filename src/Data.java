@@ -10,8 +10,8 @@ public class Data {
                                    String confirmPassword) {
         try {
             check(login, password, confirmPassword);
-        } catch (WrongLoginException | WrongPasswordException e) {
-            System.out.println(e.getMessage());
+        } catch (WrongLoginException exception | WrongPasswordException exception) {
+            System.out.println(exception.getMessage());
             return false;
         }
         return true;
